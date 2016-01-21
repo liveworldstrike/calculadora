@@ -7,8 +7,6 @@
  */
 public class Calculadora
 {
-    // instance variables - replace the example below with your own
-    private int multi;
 
     /**
      * Constructor for objects of class Calculadora
@@ -17,15 +15,15 @@ public class Calculadora
     {
 
     }
-    
+
     /**
      * metodo que inprime los multiplos (5 primeros)entre 10-95 
      */
     public void multiplesOfFive()
     {
-        multi = 10;
+        int multi = 10;
         while(multi < 90){
-            multi = multi +5;
+            multi = multi + 5;
             System.out.println(multi);
         }
     }
@@ -37,11 +35,39 @@ public class Calculadora
     {
         int sum = 0;
         int cont = 0;
-        while (cont<10){
-            cont = cont+1 ;
+        while (cont < 10){
+            cont = cont + 1 ;
             sum = sum + cont ;
 
         }
         System.out.println("la suma de los números comprendidos entre el 0 y el 10 (ambos incluidos)" + " = " + sum);
     }
+
+    /**
+     * metodo que devuelve la suma de los valores comprendidos entre dichos parámetros
+     */
+    public int sumValuesInterval(int a ,int b )
+    {
+        int sum ;
+        if (a>=0 && b>=0){
+            if (a > b){
+                int almacenado = a;
+                a = b;
+                b = almacenado;
+            }
+            sum = a;
+            while (a < b){
+                a++;
+                sum = sum + a ;
+            }
+            
+        }
+        else{
+            System.out.println("numero mal introducido solo valores positivo" );
+            sum = -1;
+        }
+        return sum;
+   }
+    
+    
 }
