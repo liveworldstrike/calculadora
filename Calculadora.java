@@ -75,14 +75,20 @@ public class Calculadora
     public boolean isPrime(int n)
     {
         boolean siPrimo = true;
-        int num = 0;
-        while(2 <=(n-(num+1))){
-            num++;
-            int divi =(n % (n-num));
-            if (divi == 0){
-                siPrimo = false;
+        if (n>1){
+            int num = 0;
+            while(2 <=(n-(num+1))){
+                num++;
+                int divi =(n % (n-num));
+                if (divi == 0){
+                    siPrimo = false;
+                }
+
             }
-        
+        }
+        else {
+            System.out.println("parametro introducio erroneo (valor mayor  que 1)" );
+            siPrimo = false ;
         }
         return (siPrimo);
     }
