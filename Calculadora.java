@@ -60,14 +60,31 @@ public class Calculadora
                 a++;
                 sum = sum + a ;
             }
-            
+
         }
         else{
             System.out.println("numero mal introducido solo valores positivo" );
             sum = -1;
         }
         return sum;
-   }
-    
-    
+    }
+
+    /**
+     * metodo que devuelve verdadero si el parámetro n es primo o falso en caso contrario
+     */
+    public boolean isPrime(int n)
+    {
+        boolean siPrimo = true;
+        int num = 0;
+        while(2 <=(n-(num+1))){
+            num++;
+            int divi =(n % (n-num));
+            if (divi == 0){
+                siPrimo = false;
+            }
+        
+        }
+        return (siPrimo);
+    }
+
 }
