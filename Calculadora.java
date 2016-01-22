@@ -93,4 +93,26 @@ public class Calculadora
         return (siPrimo);
     }
 
+    /**
+     * metodo para multiplicar 2 numeros que se nos den.
+     */
+    public int mult(int a ,int b)
+    {
+        int multi = -1;
+        if (a<0 && b<0){
+            System.out.println("error valores mal introducidos " );
+
+        }
+        else{
+            int cont = 1;
+            multi= 0;
+            while (cont <=b){
+                multi = multi+ a;
+                cont++;
+
+            
+            }
+        }
+        return multi;
+    }
 }
