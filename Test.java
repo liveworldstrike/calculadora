@@ -107,10 +107,10 @@ public class Test
         }
         
         if (calculadora.sumValuesInterval(1,-7) == -1){
-            System.out.println("Comprobando sumValuesInterval(1,-8)...resultado correcto -1 / resultado metodo -1... OK");
+            System.out.println("Comprobando sumValuesInterval(1,-7)...resultado correcto -1 / resultado metodo -1... OK");
         }
         else{
-            System.out.println("Comprobando sumValuesInterval(1,-8)...resultado correcto -1 / resultado metodo " + calculadora.sumValuesInterval(1,-8) + "... ERROR");
+            System.out.println("Comprobando sumValuesInterval(1,-7)...resultado correcto -1 / resultado metodo " + calculadora.sumValuesInterval(1,-8) + "... ERROR");
             bien = false;
         }
         
