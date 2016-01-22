@@ -13,7 +13,7 @@ public class Test
     /**
      * An example of a method - replace this comment with your own
      */
-    public void testSumValuesInterval()
+    public void testIsPrime()
     {
         Calculadora calculadora = new Calculadora();
         boolean ultimaObcion = true;
@@ -58,13 +58,13 @@ public class Test
             ultimaObcion = false ;
         }
         
-        if( calculadora.isPrime(7)){
-
-            System.out.println("Comprobando isPrime(7)... resultado correcto true / resultado metodo" + calculadora.isPrime(7)+ "... OK");
+        if( calculadora.isPrime(10)){
+            System.out.println("Comprobando isPrime(10)... resultado correcto false / resultado metodo " + calculadora.isPrime(10) + "... ERROR");
+            ultimaObcion = false ;
+            
         }
         else {
-            System.out.println("Comprobando isPrime(7)... resultado correcto true / resultado metodo" + calculadora.isPrime(7) + "... ERROR");
-            ultimaObcion = false ;
+            System.out.println("Comprobando isPrime(10)... resultado correcto false / resultado metodo " + calculadora.isPrime(10)+ "... OK");
         }
         
         if (ultimaObcion) {
@@ -78,7 +78,7 @@ public class Test
     /**
      * Método que prueba si el funcionamiento de sumValuesInterval es correcto.
      */
-    public void testIsPrime()
+    public void testSumValuesInterval()
     {
         Calculadora calculadora = new Calculadora();
         boolean bien = true;
